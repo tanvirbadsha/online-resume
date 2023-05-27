@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <title>Online Resume</title>
+    <style>
+        /* https://colorhunt.co/palette/c4dfdfd2e9e9e3f4f4f8f6f4 */
+        *{
+            background-color: #C4DFDF;
+            font-family: 'Libre Baskerville', serif;
+        }
+        .profile-picture{
+            border-radius: 50%;
+        }
+        .name{
+            background-color: #E3F4F4;
+        }
+        .section-one h2,p,.section-one{
+            background-color: #E3F4F4;
+        }
+        .section-one{
+            padding: 10px;
+        }
+        .section-two{
+            background-color: #E3F4F4;
+            padding: 10px;
+        }
+        .section-two h2{
+            background-color: #E3F4F4;
+        }
+        .section-two ul{
+            background-color: #E3F4F4;
+        }
+        .section-two ul li h3{
+            background-color: #E3F4F4;
+        }
+    </style>
 </head>
 <body>
-    <h1>Tanvir Badsha</h1>
-    <img src="./assets/pictures/profile.jpg" alt="pofile-picture" height="300px" width="300px">
-    <h2>Summary: </h2>
-    <p>Experienced with many programming language like JavaScript, Python, Java. I am also familiar with JS frameworks like REACT and Node.js and with MERN stack also. I have completed atelast 2 project with MERN stack on my own without the help of any online tutorial. Also did 1 project about a database design with sql and 1 project about Machine Learning.</p>
+    <h1 class="name">Tanvir Badsha</h1>
+    <img src="./assets/pictures/profile.jpg" class="profile-picture" alt="pofile-picture" height="300px" width="300px">
+    <div class="section-one">
+        <h2>Summary: </h2>
+        <p>Experienced with many programming language like JavaScript, Python, Java. I am also familiar with JS frameworks like REACT and Node.js and with MERN stack also. I have completed atelast 2 project with MERN stack one my own without the help of any online tutorial. Also I did one project about a database design with sql and 1 project about Machine Learning.</p>
+    </div>
     <hr>
-    <h2>Education: </h2>
+    <div class="section-two">
+        <h2>Education: </h2>
     <ul>
         <ul>
             <li><h3> Bachelor of Science in Computer Science and Engineering </li></h3>
@@ -34,7 +72,9 @@
                 <li><h3>GPA 5.00</h3></li>
             </ul>            
         </ul>
-    </ul> <hr>
+    </ul>
+    </div>
+     <hr>
     <h2>Work Experience: </h2>
     <p> As i am a fresher, I have currently no work Experience.</p> <hr>
     <h2>SKILLS: </h2>
